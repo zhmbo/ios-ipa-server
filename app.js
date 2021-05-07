@@ -13,6 +13,10 @@ const options = {
 }
 app.use(express.static('public', options))
 
+app.get('/test',function(req,res){
+  res.json('aaaa')
+})
+
 app.get('/plist/:file', function(req, res) {
 
     // fs.readFile(path.join(__dirname, '..', 'templates') + '/template.plist', function(err, data) {
