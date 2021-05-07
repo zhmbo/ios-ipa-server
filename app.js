@@ -5,6 +5,14 @@ const app = express();
 var base64 = require('base64-url');
 var mustache = require('mustache');
 
+//静态文件跨域
+const options = {
+  setHeaders: function (res, path, stat) {
+      res.set('Access-Control-Allow-Origin', '*')
+  }
+}
+app.use(express.static('public', options))
+
 app.get('/plist/:file', function(req, res) {
 
     // fs.readFile(path.join(__dirname, '..', 'templates') + '/template.plist', function(err, data) {
@@ -28,7 +36,7 @@ app.get('/plist/:file', function(req, res) {
   });
 
 
-const server = app.listen(8811, '0.0.0.0',  function(){
+const server = app.listen(8080, '0.0.0.0',  function(){
     let host = server.address().address;
     const interfaces = require('os').networkInterfaces();
     for (const key in interfaces) {
