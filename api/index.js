@@ -1,9 +1,9 @@
 const fs = require('fs')
 const path = require('path')
-const express = require('express');
-const app = express();
-var base64 = require('base64-url');
-var mustache = require('mustache');
+// const express = require('express');
+// const app = express();
+// var base64 = require('base64-url');
+// var mustache = require('mustache');
 
 module.exports = (req, res) => {
     // const { name = 'World' } = req.query
