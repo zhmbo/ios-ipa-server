@@ -12,15 +12,17 @@ module.exports = (req, res) => {
       throw err;
     var template = data.toString();
 
-    var encodedName = req.query.name;
+    var encodedNbi = req.query.nbi;
 
-    var name = base64.decode(encodedName)
+    var nbiStr = base64.decode(encodedNbi)
     
+    var nbiArr = nbiStr.split("|");
 
     var rendered = mustache.render(template, {
       encodedName: encodedName,
-      name: "小杜",
-      ipaUrl: "http://127.0.0.1/NoSign/22222222222.ipa",
+      name: nbiArr[0],
+      bundleID: nbiArr[1],
+      ipaUrl: nbiArr[2],
     });
 
     // res.set('Content-Type', 'text/plain; charset=utf-8');
