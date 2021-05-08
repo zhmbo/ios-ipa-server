@@ -19,17 +19,19 @@ module.exports = (req, res) => {
       throw err;
     var template = data.toString();
 
-    var encodedName = req.query.name;
-    var name = base64.decode(encodedName)
-    var rendered = mustache.render(template, {
-      encodedName: encodedName,
-      name: name,
-      ip: "ipAddress",
-      port: "port",
-    });
+    res.send(template)
 
-    res.set('Content-Type', 'text/plain; charset=utf-8');
-    res.send(rendered);
+    // var encodedName = req.query.name;
+    // var name = base64.decode(encodedName)
+    // var rendered = mustache.render(template, {
+    //   encodedName: encodedName,
+    //   name: name,
+    //   ip: "ipAddress",
+    //   port: "port",
+    // });
+
+    // res.set('Content-Type', 'text/plain; charset=utf-8');
+    // res.send(rendered);
   })
   
 }
