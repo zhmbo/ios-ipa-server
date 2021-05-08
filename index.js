@@ -15,6 +15,7 @@ module.exports = (req, res) => {
     var encodedName = req.query.name;
 
     var name = base64.decode(encodedName)
+    
 
     var rendered = mustache.render(template, {
       encodedName: encodedName,
