@@ -1,15 +1,15 @@
 const fs = require('fs')
 const path = require('path')
-// const express = require('express');
-// const app = express();
-// var base64 = require('base64-url');
-// var mustache = require('mustache');
+const express = require('express');
+const app = express();
+var base64 = require('base64-url');
+var mustache = require('mustache');
 
 module.exports = (req, res) => {
-    // const { name = 'World' } = req.query
-    // res.send(`Hello ${name}!`)
-  res.send("plist"+path.join(__dirname, '..') + '/template.plist');
-  res.send("res"+res.query);
+    const { name = 'World' } = req.query
+    res.send(`Hello ${name}!`)
+  // res.send("plist"+path.join(__dirname, '..') + '/template.plist');
+  // res.send("res"+res.query);
   //   console.log("res"+res.query);
   //   console.log("plist"+path.join(__dirname, '..') + '/template.plist');
 
