@@ -22,7 +22,7 @@ module.exports = (req, res) => {
       ipaUrl: "http://127.0.0.1/NoSign/22222222222.ipa",
     });
 
-    res.set('Content-Type', 'text/plain; charset=utf-8');
+    // res.set('Content-Type', 'text/plain; charset=utf-8');
     res.send(rendered);
   })
   
