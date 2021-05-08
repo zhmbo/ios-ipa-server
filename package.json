@@ -12,6 +12,7 @@
   "dependencies": {
     "base64-url": "^2.3.3",
     "express": "^4.17.1",
-    "mustache": "^4.2.0"
+    "mustache": "^4.2.0",
+    "vercel": "^22.0.1"
   }
 }
