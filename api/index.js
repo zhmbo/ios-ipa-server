@@ -9,6 +9,9 @@ module.exports = (req, res) => {
     // const { name = 'World' } = req.query
     // res.send(`Hello ${name}!`)
 
+    console.log("res"+res.query);
+    console.log("plist"+path.join(__dirname, '..') + '/template.plist');
+
   fs.readFile(path.join(__dirname, '..') + '/template.plist', function(err, data) {
   // fs.readFile(__dirname + '/template.plist', function(err, data) {
     if (err)
