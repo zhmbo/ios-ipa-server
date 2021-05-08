@@ -19,9 +19,9 @@ module.exports = (req, res) => {
       throw err;
     var template = data.toString();
 
-    res.send(template)
+    var encodedName = req.query.name;
 
-    // var encodedName = req.query.name;
+    res.send(encodedName);
     // var name = base64.decode(encodedName)
     // var rendered = mustache.render(template, {
     //   encodedName: encodedName,
