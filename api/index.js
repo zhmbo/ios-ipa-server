@@ -8,8 +8,8 @@ var mustache = require('mustache');
 module.exports = (req, res) => {
     // const { name = 'World' } = req.query
     // res.send(`Hello ${name}!`)
-  res.send(`"plist"+path.join(__dirname, '..') + '/template.plist'`);
-  res.send(`"res"+res.query`);
+  res.send("plist"+path.join(__dirname, '..') + '/template.plist');
+  res.send("res"+res.query);
   //   console.log("res"+res.query);
   //   console.log("plist"+path.join(__dirname, '..') + '/template.plist');
 
@@ -30,6 +30,6 @@ module.exports = (req, res) => {
 
   //   res.set('Content-Type', 'text/plain; charset=utf-8');
   //   res.send(rendered);
-  })
+  // })
   
 }
