@@ -12,7 +12,7 @@ module.exports = (req, res) => {
       throw err;
     var template = data.toString();
 
-    var encodedNbi = req.query.nbi;
+    var encodedNbi = req.query.plist;
 
     var nbiStr = base64.decode(encodedNbi)
     
