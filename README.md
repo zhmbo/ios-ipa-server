@@ -6,7 +6,7 @@
 
 Deploy your own Vue.js project with Vercel.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/itzhangbao/ios-ipa/server)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/itzhangbao/ios-ipa-server)
 
 _Live Example: https://ios-ipa-server.vercel.com/
 
