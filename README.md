@@ -1,32 +1,24 @@
 # ios-ipa-server
-部署到vercel.com实现动态获取plist安装ipa的服务(Deploy to vercel.com to dynamically obtain the plist service that supports apple protocol installation ipa)
 
+部署到vercel.com实现动态获取plist安装ipa的服务(Deploy to vercel.com to dynamically obtain the plist service that supports apple protocol installation ipa)
 
 ## Deploy Your Own
 
-Deploy your own Vue.js project with Vercel.
+create a vercel acount on [vercel.com](https://vercel.com/)
+
+and click ⬇️ Deploy button
+
+Deploy your own ios-ipa-server project with Vercel.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/itzhangbao/ios-ipa-server)
 
-_Live Example: https://ios-ipa-server.vercel.com/
+wait...
 
-### How We Created This Example
-
-1. fork or clone this repository to your github.
-
-2. create a project on your Vercel.
-
-3. and add this repository.
-
-config git
-
-```shell
-$ npm gp
-```
+Finish!
 
 ### Use
 
-1. app
+- app
 
 open this url 
 
@@ -34,10 +26,12 @@ open this url
 itms-services://?action=download-manifest&url=https://your-projcet-name.vercel.app/ipa/plist/base64-String(name|bundleid|ipa-url)
 ```
 
-2. web
+- web
 
 herf 
 
 ```json
 itms-services://?action=download-manifest&url=https://your-projcet-name.vercel.app/ipa/plist/base64-String(name|bundleid|ipa-url)
 ```
+
+If it helps you, please give it to star ⬆️ . ：）
