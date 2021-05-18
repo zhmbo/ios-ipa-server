@@ -23,3 +23,13 @@ config git
 ```shell
 $ npm gp
 ```
+
+### Use
+
+1. app
+
+open this url `itms-services://?action=download-manifest&url=https://your-projcet-name.vercel.app/ipa/plist/base64-String(name|bundleid|ipa-url)`
+
+2. web
+
+herf `itms-services://?action=download-manifest&url=https://your-projcet-name.vercel.app/ipa/plist/base64-String(name|bundleid|ipa-url)`
