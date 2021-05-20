@@ -14,6 +14,12 @@ module.exports = (req, res) => {
 
     var encodedNbi = req.query.plist;
 
+    if (encodedNbi.length == 63) {
+      encodedNbi = encodedNbi + "=";
+    }else if (encodedNbi.length == 62) {
+      encodedNbi = encodedNbi + "==";
+    }
+
     var nbiStr = base64.decode(encodedNbi)
     
     var nbiArr = nbiStr.split("|");
