@@ -18,7 +18,7 @@ module.exports = (req, res) => {
     
     var nbiArr = nbiStr.split("|");
 
-    console.log(encodedNbi,nbiArr)
+    console.log(encodedNbi,nbiStr)
 
     var rendered = mustache.render(template, {
       // encodedName: encodedName,
