@@ -14,7 +14,7 @@ module.exports = (req, res) => {
 
     var encodedNbi = req.query.plist;
 
-    var nbiStr = base64.decode(encodedNbi)
+    var nbiStr = base64.decode(encodedNbi,"utf-8")
     
     var nbiArr = nbiStr.split("|");
 
