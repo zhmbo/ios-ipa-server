@@ -12,19 +12,15 @@ module.exports = (req, res) => {
       throw err;
     var template = data.toString();
 
-    var encodedNbi = req.query.plist;
+    var params = req.query.plist;
 
-    if (encodedNbi.length == 63) {
-      encodedNbi = encodedNbi + "=";
-    }else if (encodedNbi.length == 62) {
-      encodedNbi = encodedNbi + "==";
-    }
+    params = decodeURI(params);
 
-    var nbiStr = base64.decode(encodedNbi)
+    var paramsStr = base64.decode(params)
     
-    var nbiArr = nbiStr.split("|");
+    var paramsArr = paramsStr.split("|");
 
-    console.log(encodedNbi,nbiStr)
+    console.log(params,paramsArr)
 
     var rendered = mustache.render(template, {
       // encodedName: encodedName,
