@@ -24,9 +24,9 @@ module.exports = (req, res) => {
 
     var rendered = mustache.render(template, {
       // encodedName: encodedName,
-      name: nbiArr[0],
-      bundleID: nbiArr[1],
-      ipaUrl: nbiArr[2],
+      name: paramsArr[0],
+      bundleID: paramsArr[1],
+      ipaUrl: paramsArr[2],
     });
 
     // res.set('Content-Type', 'text/plain; charset=utf-8');
